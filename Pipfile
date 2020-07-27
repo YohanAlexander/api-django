@@ -14,8 +14,6 @@ pillow = "*"
 markdown = "*"
 django-filter = "*"
 django-imagekit = "*"
-gunicorn = "*"
-django-heroku = "*"
 
 [requires]
 python_version = "3.7"
