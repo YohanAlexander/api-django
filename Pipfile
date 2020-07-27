@@ -13,6 +13,7 @@ django-phonenumber-field = {extras = ["phonenumbers"], version = "*"}
 pillow = "*"
 markdown = "*"
 django-filter = "*"
+django-imagekit = "*"
 
 [requires]
 python_version = "3.7"

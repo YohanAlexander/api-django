@@ -9,12 +9,11 @@ class Cliente(models.Model):
     foto = models.ImageField('Foto', upload_to='fotos')
     nome = models.CharField('Nome', max_length=100)
     sobrenome = models.CharField('Sobrenome', max_length=100)
-    cpf = CPFField('CPF', primary_key=True)
+    cpf = CPFField('CPF')
     rg = models.CharField('RG', max_length=100)
     telefone = PhoneNumberField('Telefone')
     email = models.EmailField('Email', max_length=100)
-    endereco = models.ForeignKey('Endereco', on_delete=models.CASCADE, default=1)
-
+    endereco = models.ForeignKey('Endereco', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.nome

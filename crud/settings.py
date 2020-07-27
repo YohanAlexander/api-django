@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'phonenumber_field',
     'cpf_field',
+    'imagekit',
     'api'
 ]
 
