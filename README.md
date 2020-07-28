@@ -17,6 +17,10 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
+O diagrama de classes do banco de dados:
+
+![Diagrama](crud.png)
+
 ### Criando um usuário
 
 Crie um usúario para acessar a área administrativa:
@@ -31,6 +35,7 @@ Use o servidor para ambiente de desenvolvimento do `Django`:
 
 ```
 python manage.py runserver
+firefox localhost:8000
 ```
 
 ### Acessando o CRUD
