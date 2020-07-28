@@ -1,5 +1,11 @@
 # Desafio ma9
 
+## Sobre o projeto
+
+O projeto foi desenvolvido como desafio para uma vaga de trainee na empresa ma9. O projeto consiste em uma API Restful com rotas aninhadas de acordo com a herança um para muitos das tabelas do banco de dados. A arquitetura backend do projeto foi implementado com o uso do frameworks `Django` e `Django Rest`. O diagrama de classes do banco de dados é apresentado abaixo:
+
+![Diagrama](https://raw.githubusercontent.com/YohanAlexander/api-ma9/master/crud.png)
+
 ### Instalando dependências
 
 Na raiz do projeto acesse o terminal e execute:
@@ -16,10 +22,6 @@ Crie o banco de dados `SQL` com base nos modelos:
 python manage.py makemigrations
 python manage.py migrate
 ```
-
-O diagrama de classes do banco de dados:
-
-![Diagrama](crud.png)
 
 ### Criando um usuário
 
