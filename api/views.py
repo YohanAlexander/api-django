@@ -19,6 +19,10 @@ class EnderecoViewSet(viewsets.ModelViewSet):
     queryset = Endereco.objects.all()
     serializer_class = EnderecoSerializer
 
+    def get_queryset(self):
+        return Endereco.objects.filter(cliente=self.kwargs['cliente_pk'])
+
+
 def index(request):
 
     enderecos = Endereco.objects.all()
