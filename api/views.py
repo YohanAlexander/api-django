@@ -19,3 +19,13 @@ class EnderecoViewSet(viewsets.ModelViewSet):
     queryset = Endereco.objects.all()
     serializer_class = EnderecoSerializer
 
+def index(request):
+
+    clientes = Cliente.objects.all()
+
+    context = {
+        'clientes': clientes
+    }
+
+    return render(request, 'index.html', context)
+
