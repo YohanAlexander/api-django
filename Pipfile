@@ -17,6 +17,7 @@ django-imagekit = "*"
 drf-nested-routers = "*"
 whitenoise = "*"
 gunicorn = "*"
+drf-writable-nested = "*"
 
 [requires]
 python_version = "3.7"
