@@ -10,25 +10,15 @@
     <table class="table">
       <thead>
         <tr>
-          <th>Nome</th>
-          <th>Sobrenome</th>
-          <th>CPF</th>
-          <th>RG</th>
-          <th>Telefone</th>
-          <th>Email</th>
+          <th>Cliente</th>
           <th>Endereço</th>
         </tr>
       </thead>
       <tbody>
-        {% for cliente in clientes %}
+        {% for endereco in enderecos %}
           <tr>
-            <td>{{ cliente.nome }}</td>
-            <td>{{ cliente.sobrenome }}</td>
-            <td>{{ cliente.cpf }}</td>
-            <td>{{ cliente.rg }}</td>
-            <td>{{ cliente.telefone }}</td>
-            <td>{{ cliente.email }}</td>
-            <td>{{ cliente.endereco }}</td>
+            <td>{{ endereco.cliente }}</td>
+            <td>{{ endereco }}</td>
           </tr>
         {% endfor %}
       </tbody>

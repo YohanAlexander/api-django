@@ -21,10 +21,21 @@ class EnderecoViewSet(viewsets.ModelViewSet):
 
 def index(request):
 
-    clientes = Cliente.objects.all()
+    enderecos = Endereco.objects.all()
 
     context = {
-        'clientes': clientes
+        # 'nome': enderecos.cliente.nome,
+        # 'sobrenome': enderecos.cliente.nome,
+        # 'cpf': enderecos.cliente.cpf,
+        # 'rg': enderecos.cliente.rg,
+        # 'telefone': enderecos.cliente.telefone,
+        # 'email': enderecos.cliente.email,
+        # 'logradouro': enderecos.logradouro,
+        # 'numero': enderecos.numero,
+        # 'bairro': enderecos.bairro,
+        # 'cidade': enderecos.cidade,
+        # 'estado': enderecos.estado,
+        'enderecos': enderecos,
     }
 
     return render(request, 'index.html', context)

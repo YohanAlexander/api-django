@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'l6k^z)b19rlnbl_+e&=4f36r*nn$7--yppuid%6k6qht57+*q2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'cpf_field',
     'imagekit',
-    'api'
+    'api',
 ]
 
 MIDDLEWARE = [

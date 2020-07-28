@@ -6,13 +6,12 @@ from imagekit.admin import AdminThumbnail
 
 # Register your models here.
 
+@admin.register(Cliente)
 class ClienteAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'sobrenome', 'cpf', 'rg', 'telefone', 'email', 'endereco', 'image')
+    list_display = ('nome', 'sobrenome', 'cpf', 'rg', 'telefone', 'email', 'image')
     image = AdminThumbnail(image_field='foto')
 
+@admin.register(Endereco)
 class EnderecoAdmin(admin.ModelAdmin):
-    list_display = ('logradouro', 'numero', 'bairro', 'cidade', 'estado')
-
-admin.site.register(Cliente, ClienteAdmin)
-admin.site.register(Endereco, EnderecoAdmin)
+    list_display = ('logradouro', 'numero', 'bairro', 'cidade', 'estado', 'cliente')
 

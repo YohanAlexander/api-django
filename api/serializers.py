@@ -7,12 +7,12 @@ class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
 
         model = Cliente
-        fields = ('foto', 'nome', 'sobrenome', 'cpf', 'rg', 'telefone', 'email', 'endereco')
+        fields = ('foto', 'nome', 'sobrenome', 'cpf', 'rg', 'telefone', 'email')
 
 class EnderecoSerializer(serializers.ModelSerializer):
 
     class Meta:
 
         model = Endereco
-        fields = ('logradouro', 'numero', 'bairro', 'cidade', 'estado')
+        fields = ('logradouro', 'numero', 'bairro', 'cidade', 'estado', 'cliente')
 
